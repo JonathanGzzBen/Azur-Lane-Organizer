@@ -77,11 +77,11 @@
             this.mnuEditEditCharacter = new System.Windows.Forms.ToolStripMenuItem();
             this.selectMainPictureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.selectChibiPictureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuEditEmptyEquipment = new System.Windows.Forms.ToolStripMenuItem();
+            this.emptyBasicInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.emptySkillsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.emptyStrategyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuEditEmptyEquipment = new System.Windows.Forms.ToolStripMenuItem();
             this.picChibi = new System.Windows.Forms.PictureBox();
-            this.emptyBasicInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.picCharacter)).BeginInit();
             this.grpBasicInformation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numRanking)).BeginInit();
@@ -256,7 +256,7 @@
             this.grpBasicInformation.Location = new System.Drawing.Point(419, 27);
             this.grpBasicInformation.Name = "grpBasicInformation";
             this.grpBasicInformation.Size = new System.Drawing.Size(754, 176);
-            this.grpBasicInformation.TabIndex = 1;
+            this.grpBasicInformation.TabIndex = 0;
             this.grpBasicInformation.TabStop = false;
             this.grpBasicInformation.Text = "Basic Information";
             // 
@@ -271,7 +271,7 @@
             this.numRanking.Name = "numRanking";
             this.numRanking.ReadOnly = true;
             this.numRanking.Size = new System.Drawing.Size(58, 26);
-            this.numRanking.TabIndex = 26;
+            this.numRanking.TabIndex = 19;
             // 
             // numIdNo
             // 
@@ -284,7 +284,7 @@
             this.numIdNo.Name = "numIdNo";
             this.numIdNo.ReadOnly = true;
             this.numIdNo.Size = new System.Drawing.Size(58, 26);
-            this.numIdNo.TabIndex = 25;
+            this.numIdNo.TabIndex = 9;
             // 
             // numAffinity
             // 
@@ -297,7 +297,7 @@
             this.numAffinity.Name = "numAffinity";
             this.numAffinity.ReadOnly = true;
             this.numAffinity.Size = new System.Drawing.Size(58, 26);
-            this.numAffinity.TabIndex = 24;
+            this.numAffinity.TabIndex = 17;
             // 
             // numStars
             // 
@@ -310,7 +310,7 @@
             this.numStars.Name = "numStars";
             this.numStars.ReadOnly = true;
             this.numStars.Size = new System.Drawing.Size(58, 26);
-            this.numStars.TabIndex = 23;
+            this.numStars.TabIndex = 15;
             // 
             // numPower
             // 
@@ -323,7 +323,7 @@
             this.numPower.Name = "numPower";
             this.numPower.ReadOnly = true;
             this.numPower.Size = new System.Drawing.Size(58, 26);
-            this.numPower.TabIndex = 22;
+            this.numPower.TabIndex = 13;
             // 
             // numIndex
             // 
@@ -336,7 +336,7 @@
             this.numIndex.Name = "numIndex";
             this.numIndex.ReadOnly = true;
             this.numIndex.Size = new System.Drawing.Size(58, 26);
-            this.numIndex.TabIndex = 21;
+            this.numIndex.TabIndex = 5;
             // 
             // numLevel
             // 
@@ -349,7 +349,7 @@
             this.numLevel.Name = "numLevel";
             this.numLevel.ReadOnly = true;
             this.numLevel.Size = new System.Drawing.Size(58, 26);
-            this.numLevel.TabIndex = 20;
+            this.numLevel.TabIndex = 11;
             // 
             // txtName
             // 
@@ -372,7 +372,7 @@
             this.grpSkills.Location = new System.Drawing.Point(419, 209);
             this.grpSkills.Name = "grpSkills";
             this.grpSkills.Size = new System.Drawing.Size(754, 121);
-            this.grpSkills.TabIndex = 2;
+            this.grpSkills.TabIndex = 1;
             this.grpSkills.TabStop = false;
             this.grpSkills.Text = "Skills";
             // 
@@ -434,7 +434,7 @@
             this.grpStrategy.Location = new System.Drawing.Point(419, 336);
             this.grpStrategy.Name = "grpStrategy";
             this.grpStrategy.Size = new System.Drawing.Size(754, 172);
-            this.grpStrategy.TabIndex = 3;
+            this.grpStrategy.TabIndex = 2;
             this.grpStrategy.TabStop = false;
             this.grpStrategy.Text = "Strategy";
             // 
@@ -449,7 +449,7 @@
             this.numTier.Name = "numTier";
             this.numTier.ReadOnly = true;
             this.numTier.Size = new System.Drawing.Size(58, 26);
-            this.numTier.TabIndex = 27;
+            this.numTier.TabIndex = 1;
             // 
             // txtSinergy
             // 
@@ -521,7 +521,7 @@
             this.grpEquipment.Location = new System.Drawing.Point(311, 514);
             this.grpEquipment.Name = "grpEquipment";
             this.grpEquipment.Size = new System.Drawing.Size(862, 121);
-            this.grpEquipment.TabIndex = 4;
+            this.grpEquipment.TabIndex = 3;
             this.grpEquipment.TabStop = false;
             this.grpEquipment.Text = "Equipment";
             // 
@@ -643,7 +643,7 @@
             // 
             this.mnuEditEditCharacter.Name = "mnuEditEditCharacter";
             this.mnuEditEditCharacter.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
-            this.mnuEditEditCharacter.Size = new System.Drawing.Size(188, 22);
+            this.mnuEditEditCharacter.Size = new System.Drawing.Size(204, 22);
             this.mnuEditEditCharacter.Text = "&Edit Character";
             this.mnuEditEditCharacter.Click += new System.EventHandler(this.mnuEditEditCharacter_Click);
             // 
@@ -661,12 +661,12 @@
             this.selectChibiPictureToolStripMenuItem.Text = "Select &Chibi Picture";
             this.selectChibiPictureToolStripMenuItem.Click += new System.EventHandler(this.selectChibiPictureToolStripMenuItem_Click);
             // 
-            // mnuEditEmptyEquipment
+            // emptyBasicInformationToolStripMenuItem
             // 
-            this.mnuEditEmptyEquipment.Name = "mnuEditEmptyEquipment";
-            this.mnuEditEmptyEquipment.Size = new System.Drawing.Size(204, 22);
-            this.mnuEditEmptyEquipment.Text = "Empty E&quipment";
-            this.mnuEditEmptyEquipment.Click += new System.EventHandler(this.mnuEditEmptyEquipment_Click);
+            this.emptyBasicInformationToolStripMenuItem.Name = "emptyBasicInformationToolStripMenuItem";
+            this.emptyBasicInformationToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.emptyBasicInformationToolStripMenuItem.Text = "Empty &Basic Information";
+            this.emptyBasicInformationToolStripMenuItem.Click += new System.EventHandler(this.emptyBasicInformationToolStripMenuItem_Click);
             // 
             // emptySkillsToolStripMenuItem
             // 
@@ -678,9 +678,16 @@
             // emptyStrategyToolStripMenuItem
             // 
             this.emptyStrategyToolStripMenuItem.Name = "emptyStrategyToolStripMenuItem";
-            this.emptyStrategyToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.emptyStrategyToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
             this.emptyStrategyToolStripMenuItem.Text = "Empty S&trategy";
             this.emptyStrategyToolStripMenuItem.Click += new System.EventHandler(this.emptyStrategyToolStripMenuItem_Click);
+            // 
+            // mnuEditEmptyEquipment
+            // 
+            this.mnuEditEmptyEquipment.Name = "mnuEditEmptyEquipment";
+            this.mnuEditEmptyEquipment.Size = new System.Drawing.Size(204, 22);
+            this.mnuEditEmptyEquipment.Text = "Empty E&quipment";
+            this.mnuEditEmptyEquipment.Click += new System.EventHandler(this.mnuEditEmptyEquipment_Click);
             // 
             // picChibi
             // 
@@ -692,13 +699,6 @@
             this.picChibi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picChibi.TabIndex = 1;
             this.picChibi.TabStop = false;
-            // 
-            // emptyBasicInformationToolStripMenuItem
-            // 
-            this.emptyBasicInformationToolStripMenuItem.Name = "emptyBasicInformationToolStripMenuItem";
-            this.emptyBasicInformationToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
-            this.emptyBasicInformationToolStripMenuItem.Text = "Empty &Basic Information";
-            this.emptyBasicInformationToolStripMenuItem.Click += new System.EventHandler(this.emptyBasicInformationToolStripMenuItem_Click);
             // 
             // frmCharacter
             // 

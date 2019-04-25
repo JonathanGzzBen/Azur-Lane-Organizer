@@ -170,11 +170,6 @@
             "AssemblyAsmDisplayName" = "8:System.Net.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
                 "ScatterAssemblies"
                 {
-                    "_5F6499E2986AC508E912193657A59DF2"
-                    {
-                    "Name" = "8:System.Net.Http.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:System.Net.Http.dll"
             "TargetName" = "8:"
@@ -222,7 +217,7 @@
         {
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_4A35C6128D1945CEBF351649DD69D086"
             {
-            "DefaultLocation" = "8:[AppDataFolder]"
+            "DefaultLocation" = "8:[AppDataFolder]\\[ProductName]"
             "Name" = "8:#1925"
             "AlwaysCreate" = "11:TRUE"
             "Condition" = "8:"
