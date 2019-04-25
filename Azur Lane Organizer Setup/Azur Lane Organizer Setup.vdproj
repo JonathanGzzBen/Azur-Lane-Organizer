@@ -222,7 +222,7 @@
         {
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_4A35C6128D1945CEBF351649DD69D086"
             {
-            "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\\\[ProductName]"
+            "DefaultLocation" = "8:[AppDataFolder]"
             "Name" = "8:#1925"
             "AlwaysCreate" = "11:TRUE"
             "Condition" = "8:"
@@ -271,7 +271,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Azur Lane Organizer"
         "ProductCode" = "8:{4351EE9D-0F89-491D-B350-057963A28F90}"
-        "PackageCode" = "8:{9C064348-D0C7-4AD0-90B8-08221816EB00}"
+        "PackageCode" = "8:{2504E987-123D-4537-9B37-990A0EDB4C6E}"
         "UpgradeCode" = "8:{04AEEA9A-9E08-4B6F-A6F9-88BE6700C0E5}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
