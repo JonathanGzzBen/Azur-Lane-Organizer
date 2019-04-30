@@ -101,8 +101,12 @@
     </Compile>
     <Compile Include="Business\bCharacter.cs" />
     <Compile Include="Business\bImageFiles.cs" />
-    <Compile Include="Data\dataCharacter.cs" />
-    <Compile Include="Data\dataImageFiles.cs" />
+    <Compile Include="Data\dataCharacter.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Data\dataImageFiles.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
     <Compile Include="Entities\eCharacter.cs" />
     <Compile Include="Presentation\frmCharactersList.cs">
       <SubType>Form</SubType>
