@@ -165,7 +165,7 @@ namespace AzurLane_Organizer.Presentation
 
             this.txtName.Text = _selectedCharacter.Name;
             this.txtRarity.Text = _selectedCharacter.Rarity;
-            this.numIndex.Value = _selectedCharacter.Index;
+            this.txtIndex.Text = _selectedCharacter.Index;
             this.txtFaction.Text = _selectedCharacter.Faction;
             this.numIdNo.Value = _selectedCharacter.IdNo;
             this.numLevel.Value = _selectedCharacter.Level;
@@ -197,7 +197,7 @@ namespace AzurLane_Organizer.Presentation
 
             _selectedCharacter.Name = this.txtName.Text;
             _selectedCharacter.Rarity = this.txtRarity.Text;
-            _selectedCharacter.Index = Convert.ToInt32(this.numIndex.Value);
+            _selectedCharacter.Index = this.txtIndex.Text;
             _selectedCharacter.Faction = this.txtFaction.Text;
             _selectedCharacter.IdNo = Convert.ToInt32(this.numIdNo.Value);
             _selectedCharacter.Level = Convert.ToInt32(this.numLevel.Value);
@@ -289,9 +289,9 @@ namespace AzurLane_Organizer.Presentation
                 return;
 
             _bImageFiles.SavePictureFile(saveMainPicture, imageFilePath, _selectedCharacter);
+            _bCharacter.CharacterUpdateImageDirectories(_selectedCharacter);
             UpdatePictureBoxes();
-            //Should add a method that saves only images in database, without showing messagebox
-            SaveCharacter();
+            
         }
 
         //Returns false if can't save

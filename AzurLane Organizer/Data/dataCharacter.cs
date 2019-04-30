@@ -197,6 +197,27 @@ namespace AzurLane_Organizer.Data
 
         }
 
+        public int CharacterUpdateImageDirectories(eCharacter character)
+        {
+            List<DbParameter> lstParameters = new List<DbParameter>();
+            DbParameter parameter1 = _dbpFactory.CreateParameter();
+            parameter1.ParameterName = "CharacterId";
+            parameter1.Value = character.CharacterId;
+            lstParameters.Add(parameter1);
+
+            DbParameter parameter2 = _dbpFactory.CreateParameter();
+            parameter2.ParameterName = "MainPictureDirectory";
+            parameter2.Value = character.MainPictureDirectory;
+            lstParameters.Add(parameter2);
+
+            DbParameter parameter3 = _dbpFactory.CreateParameter();
+            parameter3.ParameterName = "ChibiPictureDirectory";
+            parameter3.Value = character.ChibiPictureDirectory;
+            lstParameters.Add(parameter3);
+
+            return ExecuteNonQuery("spALCharacterUpdateImageDirectories", lstParameters);
+        }
+
         public int CharacterDelete(int characterId)
         {
             List<DbParameter> lstParameters = new List<DbParameter>();
@@ -271,7 +292,7 @@ namespace AzurLane_Organizer.Data
                                 (int)reader["CharacterId"],
                                 (string)reader["Name"],
                                 (string)reader["Rarity"],
-                                (int)reader["Index"],
+                                (string)reader["Index"],
                                 (string)reader["Faction"],
                                 (int)reader["IdNo"],
                                 (int)reader["Level"],
@@ -324,8 +345,6 @@ namespace AzurLane_Organizer.Data
                         cmd.Parameters.Add(parameter);
                     }
                 }
-
-
 
                     con.Open();
                     using (DbDataReader reader = cmd.ExecuteReader())

@@ -91,6 +91,19 @@ namespace AzurLane_Organizer.Business
         }
 
         /// <summary>
+        /// Updates the selected character's MainPictureDirectory and
+        /// ChibiPictureDirectory in the database.
+        /// </summary>
+        /// <param name="character">
+        /// Character whose information will be updated.
+        /// </param>
+        /// <returns></returns>
+        public int CharacterUpdateImageDirectories(eCharacter character)
+        {
+            return _data.CharacterUpdateImageDirectories(character);
+        }
+
+        /// <summary>
         /// Deletes eCharacter with matching CharacterId
         /// from the database.
         /// Returns null if fails.

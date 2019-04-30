@@ -732,7 +732,7 @@ namespace AzurLane_Organizer.Databases {
             public ALCharacterRow AddALCharacterRow(
                         string Name, 
                         string Rarity, 
-                        int Index, 
+                        string Index, 
                         string Faction, 
                         int IdNo, 
                         int Level, 
@@ -843,7 +843,7 @@ namespace AzurLane_Organizer.Databases {
                 base.Columns.Add(this.columnName);
                 this.columnRarity = new global::System.Data.DataColumn("Rarity", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnRarity);
-                this.columnIndex = new global::System.Data.DataColumn("Index", typeof(int), null, global::System.Data.MappingType.Element);
+                this.columnIndex = new global::System.Data.DataColumn("Index", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnIndex);
                 this.columnFaction = new global::System.Data.DataColumn("Faction", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnFaction);
@@ -896,6 +896,7 @@ namespace AzurLane_Organizer.Databases {
                 this.columnName.AllowDBNull = false;
                 this.columnName.MaxLength = 50;
                 this.columnRarity.MaxLength = 5;
+                this.columnIndex.MaxLength = 5;
                 this.columnFaction.MaxLength = 50;
                 this.columnSkill1.MaxLength = 250;
                 this.columnSkill2.MaxLength = 250;
@@ -1355,7 +1356,7 @@ namespace AzurLane_Organizer.Databases {
             public spALCharacterSelectAllRow AddspALCharacterSelectAllRow(
                         string Name, 
                         string Rarity, 
-                        int Index, 
+                        string Index, 
                         string Faction, 
                         int IdNo, 
                         int Level, 
@@ -1466,7 +1467,7 @@ namespace AzurLane_Organizer.Databases {
                 base.Columns.Add(this.columnName);
                 this.columnRarity = new global::System.Data.DataColumn("Rarity", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnRarity);
-                this.columnIndex = new global::System.Data.DataColumn("Index", typeof(int), null, global::System.Data.MappingType.Element);
+                this.columnIndex = new global::System.Data.DataColumn("Index", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnIndex);
                 this.columnFaction = new global::System.Data.DataColumn("Faction", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnFaction);
@@ -1517,6 +1518,7 @@ namespace AzurLane_Organizer.Databases {
                 this.columnName.AllowDBNull = false;
                 this.columnName.MaxLength = 50;
                 this.columnRarity.MaxLength = 5;
+                this.columnIndex.MaxLength = 5;
                 this.columnFaction.MaxLength = 50;
                 this.columnSkill1.MaxLength = 250;
                 this.columnSkill2.MaxLength = 250;
@@ -1976,7 +1978,7 @@ namespace AzurLane_Organizer.Databases {
             public spALCharacterSelectCharacterRow AddspALCharacterSelectCharacterRow(
                         string Name, 
                         string Rarity, 
-                        int Index, 
+                        string Index, 
                         string Faction, 
                         int IdNo, 
                         int Level, 
@@ -2087,7 +2089,7 @@ namespace AzurLane_Organizer.Databases {
                 base.Columns.Add(this.columnName);
                 this.columnRarity = new global::System.Data.DataColumn("Rarity", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnRarity);
-                this.columnIndex = new global::System.Data.DataColumn("Index", typeof(int), null, global::System.Data.MappingType.Element);
+                this.columnIndex = new global::System.Data.DataColumn("Index", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnIndex);
                 this.columnFaction = new global::System.Data.DataColumn("Faction", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnFaction);
@@ -2138,6 +2140,7 @@ namespace AzurLane_Organizer.Databases {
                 this.columnName.AllowDBNull = false;
                 this.columnName.MaxLength = 50;
                 this.columnRarity.MaxLength = 5;
+                this.columnIndex.MaxLength = 5;
                 this.columnFaction.MaxLength = 50;
                 this.columnSkill1.MaxLength = 250;
                 this.columnSkill2.MaxLength = 250;
@@ -2873,7 +2876,7 @@ namespace AzurLane_Organizer.Databases {
             public spALCharacterSelectNewestToOldestRow AddspALCharacterSelectNewestToOldestRow(
                         string Name, 
                         string Rarity, 
-                        int Index, 
+                        string Index, 
                         string Faction, 
                         int IdNo, 
                         int Level, 
@@ -2984,7 +2987,7 @@ namespace AzurLane_Organizer.Databases {
                 base.Columns.Add(this.columnName);
                 this.columnRarity = new global::System.Data.DataColumn("Rarity", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnRarity);
-                this.columnIndex = new global::System.Data.DataColumn("Index", typeof(int), null, global::System.Data.MappingType.Element);
+                this.columnIndex = new global::System.Data.DataColumn("Index", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnIndex);
                 this.columnFaction = new global::System.Data.DataColumn("Faction", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnFaction);
@@ -3035,6 +3038,7 @@ namespace AzurLane_Organizer.Databases {
                 this.columnName.AllowDBNull = false;
                 this.columnName.MaxLength = 50;
                 this.columnRarity.MaxLength = 5;
+                this.columnIndex.MaxLength = 5;
                 this.columnFaction.MaxLength = 50;
                 this.columnSkill1.MaxLength = 250;
                 this.columnSkill2.MaxLength = 250;
@@ -3228,10 +3232,10 @@ namespace AzurLane_Organizer.Databases {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int Index {
+            public string Index {
                 get {
                     try {
-                        return ((int)(this[this.tableALCharacter.IndexColumn]));
+                        return ((string)(this[this.tableALCharacter.IndexColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'Index\' in table \'ALCharacter\' is DBNull.", e);
@@ -3881,10 +3885,10 @@ namespace AzurLane_Organizer.Databases {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int Index {
+            public string Index {
                 get {
                     try {
-                        return ((int)(this[this.tablespALCharacterSelectAll.IndexColumn]));
+                        return ((string)(this[this.tablespALCharacterSelectAll.IndexColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'Index\' in table \'spALCharacterSelectAll\' is DBNull.", e);
@@ -4536,10 +4540,10 @@ namespace AzurLane_Organizer.Databases {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int Index {
+            public string Index {
                 get {
                     try {
-                        return ((int)(this[this.tablespALCharacterSelectCharacter.IndexColumn]));
+                        return ((string)(this[this.tablespALCharacterSelectCharacter.IndexColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'Index\' in table \'spALCharacterSelectCharacter\' is DBNull.", e);
@@ -5237,10 +5241,10 @@ namespace AzurLane_Organizer.Databases {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int Index {
+            public string Index {
                 get {
                     try {
-                        return ((int)(this[this.tablespALCharacterSelectNewestToOldest.IndexColumn]));
+                        return ((string)(this[this.tablespALCharacterSelectNewestToOldest.IndexColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'Index\' in table \'spALCharacterSelectNewestToOldest\' is DBNu" +
@@ -6211,7 +6215,7 @@ namespace AzurLane_Organizer.Databases.Azur_Lane_OrganizerDataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Rarity", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Rarity", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Rarity", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Rarity", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Index", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Index", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Index", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Index", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Index", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Index", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Faction", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Faction", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Faction", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Faction", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_IdNo", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdNo", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -6259,7 +6263,7 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Rarity", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Rarity", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Index", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Index", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Index", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Index", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Faction", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Faction", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IdNo", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdNo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Level", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Level", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -6322,7 +6326,7 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Rarity", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Rarity", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Index", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Index", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Index", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Index", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Faction", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Faction", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IdNo", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdNo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Level", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Level", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -6348,7 +6352,7 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Rarity", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Rarity", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Rarity", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Rarity", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Index", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Index", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Index", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Index", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Index", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Index", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Faction", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Faction", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Faction", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Faction", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_IdNo", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdNo", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -6396,7 +6400,7 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::AzurLane_Organizer.Properties.Settings.Default.Azur_Lane_OrganizerConnectionString2;
+            this._connection.ConnectionString = global::AzurLane_Organizer.Properties.Settings.Default.Azur_Lane_OrganizerConnectionString4;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6470,7 +6474,7 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
                     int Original_CharacterId, 
                     string Original_Name, 
                     string Original_Rarity, 
-                    global::System.Nullable<int> Original_Index, 
+                    string Original_Index, 
                     string Original_Faction, 
                     global::System.Nullable<int> Original_IdNo, 
                     global::System.Nullable<int> Original_Level, 
@@ -6506,13 +6510,13 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
                 this.Adapter.DeleteCommand.Parameters[2].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(Original_Rarity));
             }
-            if ((Original_Index.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((int)(Original_Index.Value));
-            }
-            else {
+            if ((Original_Index == null)) {
                 this.Adapter.DeleteCommand.Parameters[4].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((string)(Original_Index));
             }
             if ((Original_Faction == null)) {
                 this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(1));
@@ -6697,7 +6701,7 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
         public virtual int Insert(
                     string Name, 
                     string Rarity, 
-                    global::System.Nullable<int> Index, 
+                    string Index, 
                     string Faction, 
                     global::System.Nullable<int> IdNo, 
                     global::System.Nullable<int> Level, 
@@ -6730,11 +6734,11 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
             else {
                 this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Rarity));
             }
-            if ((Index.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((int)(Index.Value));
+            if ((Index == null)) {
+                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Index));
             }
             if ((Faction == null)) {
                 this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
@@ -6879,7 +6883,7 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
         public virtual int Update(
                     string Name, 
                     string Rarity, 
-                    global::System.Nullable<int> Index, 
+                    string Index, 
                     string Faction, 
                     global::System.Nullable<int> IdNo, 
                     global::System.Nullable<int> Level, 
@@ -6903,7 +6907,7 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
                     int Original_CharacterId, 
                     string Original_Name, 
                     string Original_Rarity, 
-                    global::System.Nullable<int> Original_Index, 
+                    string Original_Index, 
                     string Original_Faction, 
                     global::System.Nullable<int> Original_IdNo, 
                     global::System.Nullable<int> Original_Level, 
@@ -6937,11 +6941,11 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
             else {
                 this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Rarity));
             }
-            if ((Index.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(Index.Value));
+            if ((Index == null)) {
+                this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Index));
             }
             if ((Faction == null)) {
                 this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
@@ -7078,13 +7082,13 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
                 this.Adapter.UpdateCommand.Parameters[25].Value = ((object)(0));
                 this.Adapter.UpdateCommand.Parameters[26].Value = ((string)(Original_Rarity));
             }
-            if ((Original_Index.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[27].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[28].Value = ((int)(Original_Index.Value));
-            }
-            else {
+            if ((Original_Index == null)) {
                 this.Adapter.UpdateCommand.Parameters[27].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[28].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[27].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[28].Value = ((string)(Original_Index));
             }
             if ((Original_Faction == null)) {
                 this.Adapter.UpdateCommand.Parameters[29].Value = ((object)(1));
@@ -7270,7 +7274,7 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
         public virtual int Update(
                     string Name, 
                     string Rarity, 
-                    global::System.Nullable<int> Index, 
+                    string Index, 
                     string Faction, 
                     global::System.Nullable<int> IdNo, 
                     global::System.Nullable<int> Level, 
@@ -7294,7 +7298,7 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
                     int Original_CharacterId, 
                     string Original_Name, 
                     string Original_Rarity, 
-                    global::System.Nullable<int> Original_Index, 
+                    string Original_Index, 
                     string Original_Faction, 
                     global::System.Nullable<int> Original_IdNo, 
                     global::System.Nullable<int> Original_Level, 
@@ -7471,7 +7475,7 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::AzurLane_Organizer.Properties.Settings.Default.Azur_Lane_OrganizerConnectionString2;
+            this._connection.ConnectionString = global::AzurLane_Organizer.Properties.Settings.Default.Azur_Lane_OrganizerConnectionString4;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7662,7 +7666,7 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::AzurLane_Organizer.Properties.Settings.Default.Azur_Lane_OrganizerConnectionString2;
+            this._connection.ConnectionString = global::AzurLane_Organizer.Properties.Settings.Default.Azur_Lane_OrganizerConnectionString4;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7844,7 +7848,7 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::AzurLane_Organizer.Properties.Settings.Default.Azur_Lane_OrganizerConnectionString2;
+            this._connection.ConnectionString = global::AzurLane_Organizer.Properties.Settings.Default.Azur_Lane_OrganizerConnectionString4;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8035,7 +8039,7 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::AzurLane_Organizer.Properties.Settings.Default.Azur_Lane_OrganizerConnectionString2;
+            this._connection.ConnectionString = global::AzurLane_Organizer.Properties.Settings.Default.Azur_Lane_OrganizerConnectionString4;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8101,28 +8105,28 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.IDbCommand[3];
+            this._commandCollection = new global::System.Data.IDbCommand[4];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[0])).Connection = new global::System.Data.SqlClient.SqlConnection(global::AzurLane_Organizer.Properties.Settings.Default.Azur_Lane_OrganizerConnectionString2);
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[0])).Connection = new global::System.Data.SqlClient.SqlConnection(global::AzurLane_Organizer.Properties.Settings.Default.Azur_Lane_OrganizerConnectionString4);
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[0])).CommandText = "dbo.spALCharacterDelete";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[0])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[0])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[0])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CharacterId", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[1])).Connection = new global::System.Data.SqlClient.SqlConnection(global::AzurLane_Organizer.Properties.Settings.Default.Azur_Lane_OrganizerConnectionString2);
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[1])).Connection = new global::System.Data.SqlClient.SqlConnection(global::AzurLane_Organizer.Properties.Settings.Default.Azur_Lane_OrganizerConnectionString4);
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[1])).CommandText = "dbo.spALCharacterInsert";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[1])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[1])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[1])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Name", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Connection = new global::System.Data.SqlClient.SqlConnection(global::AzurLane_Organizer.Properties.Settings.Default.Azur_Lane_OrganizerConnectionString2);
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Connection = new global::System.Data.SqlClient.SqlConnection(global::AzurLane_Organizer.Properties.Settings.Default.Azur_Lane_OrganizerConnectionString4);
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).CommandText = "dbo.spALCharacterUpdate";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CharacterId", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Name", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Rarity", global::System.Data.SqlDbType.VarChar, 5, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Index", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Index", global::System.Data.SqlDbType.VarChar, 5, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Faction", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IdNo", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Level", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -8143,6 +8147,14 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Equipment4", global::System.Data.SqlDbType.VarChar, 150, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MainPictureDirectory", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ChibiPictureDirectory", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[3])).Connection = new global::System.Data.SqlClient.SqlConnection(global::AzurLane_Organizer.Properties.Settings.Default.Azur_Lane_OrganizerConnectionString4);
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[3])).CommandText = "dbo.spALCharacterUpdateImageDirectories";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[3])).CommandType = global::System.Data.CommandType.StoredProcedure;
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[3])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[3])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CharacterId", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[3])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MainPictureDirectory", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[3])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ChibiPictureDirectory", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8208,7 +8220,7 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
                     global::System.Nullable<int> CharacterId, 
                     string Name, 
                     string Rarity, 
-                    global::System.Nullable<int> Index, 
+                    string Index, 
                     string Faction, 
                     global::System.Nullable<int> IdNo, 
                     global::System.Nullable<int> Level, 
@@ -8248,11 +8260,11 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
             else {
                 command.Parameters[3].Value = ((string)(Rarity));
             }
-            if ((Index.HasValue == true)) {
-                command.Parameters[4].Value = ((int)(Index.Value));
+            if ((Index == null)) {
+                command.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
-                command.Parameters[4].Value = global::System.DBNull.Value;
+                command.Parameters[4].Value = ((string)(Index));
             }
             if ((Faction == null)) {
                 command.Parameters[5].Value = global::System.DBNull.Value;
@@ -8373,6 +8385,46 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
             }
             else {
                 command.Parameters[24].Value = ((string)(ChibiPictureDirectory));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int spALCharacterUpdateImageDirectories(global::System.Nullable<int> CharacterId, string MainPictureDirectory, string ChibiPictureDirectory) {
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[3]));
+            if ((CharacterId.HasValue == true)) {
+                command.Parameters[1].Value = ((int)(CharacterId.Value));
+            }
+            else {
+                command.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((MainPictureDirectory == null)) {
+                command.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[2].Value = ((string)(MainPictureDirectory));
+            }
+            if ((ChibiPictureDirectory == null)) {
+                command.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[3].Value = ((string)(ChibiPictureDirectory));
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 

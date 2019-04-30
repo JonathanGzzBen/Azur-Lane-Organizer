@@ -13,7 +13,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>publish\</PublishUrl>
+    <PublishUrl>C:\Users\Jonathan\Documents\Programacion\C#\Azur Lane Organizer\ClickOnceInstaller\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -28,7 +28,7 @@
     <ProductName>Azur Lane Organizer</ProductName>
     <PublisherName>Jonathan Gonzalez Benavides</PublisherName>
     <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationRevision>5</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -70,11 +70,14 @@
     <ManifestKeyFile>AzurLane Organizer_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <GenerateManifests>false</GenerateManifests>
+    <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup>
     <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -91,16 +94,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Business\bCharacter.cs" />
-    <Compile Include="Business\bImageFiles.cs" />
     <Compile Include="Databases\Azur_Lane_OrganizerDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Azur_Lane_OrganizerDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Business\bCharacter.cs" />
+    <Compile Include="Business\bImageFiles.cs" />
+    <Compile Include="Data\dataCharacter.cs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="Data\dataCharacter.cs" />
-    <Compile Include="Data\dataImageFiles.cs" />
+    <Compile Include="Data\dataImageFiles.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
     <Compile Include="Entities\eCharacter.cs" />
     <Compile Include="Presentation\frmCharactersList.cs">
       <SubType>Form</SubType>
@@ -143,18 +149,16 @@
     <None Include="AzurLane Organizer_TemporaryKey.pfx" />
     <None Include="Databases\Azur_Lane_OrganizerDataSet.xsc">
       <DependentUpon>Azur_Lane_OrganizerDataSet.xsd</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Databases\Azur_Lane_OrganizerDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>Azur_Lane_OrganizerDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Databases\Azur_Lane_OrganizerDataSet.xss">
       <DependentUpon>Azur_Lane_OrganizerDataSet.xsd</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -184,21 +188,18 @@
       <ProductName>SQL Server 2012 Express LocalDB</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
-      <Visible>False</Visible>
-      <ProductName>Windows Installer 4.5</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AjaxIcon.ico" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Databases\Azur Lane Organizer.mdf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Databases\Azur Lane Organizer_log.ldf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Azur Lane Organizer.mdf</DependentUpon>
     </Content>
-    <None Include="Resources\AjaxIcon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
