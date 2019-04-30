@@ -4,12 +4,12 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" GeneratorFunctionsComponentClassName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" UserFunctionsComponentName="QueriesTableAdapter" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Azur_Lane_OrganizerConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Azur_Lane_OrganizerConnectionString2 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.AzurLane_Organizer.Properties.Settings.GlobalReference.Default.Azur_Lane_OrganizerConnectionString2" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Azur_Lane_OrganizerConnectionString4" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Azur_Lane_OrganizerConnectionString4 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.AzurLane_Organizer.Properties.Settings.GlobalReference.Default.Azur_Lane_OrganizerConnectionString4" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ALCharacterTableAdapter" GeneratorDataComponentClassName="ALCharacterTableAdapter" Name="ALCharacter" UserDataComponentName="ALCharacterTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="Azur_Lane_OrganizerConnectionString2 (Settings)" DbObjectName="dbo.ALCharacter" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="Azur_Lane_OrganizerConnectionString4 (Settings)" DbObjectName="dbo.ALCharacter" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[ALCharacter] WHERE (([CharacterId] = @Original_CharacterId) AND ([Name] = @Original_Name) AND ((@IsNull_Rarity = 1 AND [Rarity] IS NULL) OR ([Rarity] = @Original_Rarity)) AND ((@IsNull_Index = 1 AND [Index] IS NULL) OR ([Index] = @Original_Index)) AND ((@IsNull_Faction = 1 AND [Faction] IS NULL) OR ([Faction] = @Original_Faction)) AND ((@IsNull_IdNo = 1 AND [IdNo] IS NULL) OR ([IdNo] = @Original_IdNo)) AND ((@IsNull_Level = 1 AND [Level] IS NULL) OR ([Level] = @Original_Level)) AND ((@IsNull_Power = 1 AND [Power] IS NULL) OR ([Power] = @Original_Power)) AND ((@IsNull_Stars = 1 AND [Stars] IS NULL) OR ([Stars] = @Original_Stars)) AND ((@IsNull_Affinity = 1 AND [Affinity] IS NULL) OR ([Affinity] = @Original_Affinity)) AND ((@IsNull_Ranking = 1 AND [Ranking] IS NULL) OR ([Ranking] = @Original_Ranking)) AND ((@IsNull_Skill1 = 1 AND [Skill1] IS NULL) OR ([Skill1] = @Original_Skill1)) AND ((@IsNull_Skill2 = 1 AND [Skill2] IS NULL) OR ([Skill2] = @Original_Skill2)) AND ((@IsNull_Skill3 = 1 AND [Skill3] IS NULL) OR ([Skill3] = @Original_Skill3)) AND ((@IsNull_Skill4 = 1 AND [Skill4] IS NULL) OR ([Skill4] = @Original_Skill4)) AND ((@IsNull_Tier = 1 AND [Tier] IS NULL) OR ([Tier] = @Original_Tier)) AND ((@IsNull_Buffs = 1 AND [Buffs] IS NULL) OR ([Buffs] = @Original_Buffs)) AND ((@IsNull_Sinergy = 1 AND [Sinergy] IS NULL) OR ([Sinergy] = @Original_Sinergy)) AND ((@IsNull_Equipment1 = 1 AND [Equipment1] IS NULL) OR ([Equipment1] = @Original_Equipment1)) AND ((@IsNull_Equipment2 = 1 AND [Equipment2] IS NULL) OR ([Equipment2] = @Original_Equipment2)) AND ((@IsNull_Equipment3 = 1 AND [Equipment3] IS NULL) OR ([Equipment3] = @Original_Equipment3)) AND ((@IsNull_Equipment4 = 1 AND [Equipment4] IS NULL) OR ([Equipment4] = @Original_Equipment4)) AND ((@IsNull_MainPictureDirectory = 1 AND [MainPictureDirectory] IS NULL) OR ([MainPictureDirectory] = @Original_MainPictureDirectory)) AND ((@IsNull_ChibiPictureDirectory = 1 AND [ChibiPictureDirectory] IS NULL) OR ([ChibiPictureDirectory] = @Original_ChibiPictureDirectory)))</CommandText>
@@ -19,7 +19,7 @@
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Rarity" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Rarity" SourceColumnNullMapping="true" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Rarity" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Rarity" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Index" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Index" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Index" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Index" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Index" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Index" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Faction" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Faction" SourceColumnNullMapping="true" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Faction" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Faction" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_IdNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IdNo" SourceColumnNullMapping="true" SourceVersion="Original" />
@@ -70,7 +70,7 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
                     <Parameters>
                       <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Name" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Name" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Rarity" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Rarity" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Index" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Index" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Index" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Index" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Faction" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Faction" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IdNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IdNo" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Level" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Level" SourceColumnNullMapping="false" SourceVersion="Current" />
@@ -107,7 +107,7 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
                     <Parameters>
                       <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Name" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Name" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Rarity" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Rarity" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Index" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Index" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Index" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Index" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Faction" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Faction" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IdNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IdNo" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Level" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Level" SourceColumnNullMapping="false" SourceVersion="Current" />
@@ -133,7 +133,7 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Rarity" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Rarity" SourceColumnNullMapping="true" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Rarity" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Rarity" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Index" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Index" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Index" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Index" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Index" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Index" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Faction" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Faction" SourceColumnNullMapping="true" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Faction" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Faction" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_IdNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IdNo" SourceColumnNullMapping="true" SourceVersion="Original" />
@@ -210,7 +210,7 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="spALCharacterSelectAllTableAdapter" GeneratorDataComponentClassName="spALCharacterSelectAllTableAdapter" Name="spALCharacterSelectAll" UserDataComponentName="spALCharacterSelectAllTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="Azur_Lane_OrganizerConnectionString2 (Settings)" DbObjectName="dbo.spALCharacterSelectAll" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="Azur_Lane_OrganizerConnectionString4 (Settings)" DbObjectName="dbo.spALCharacterSelectAll" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.spALCharacterSelectAll</CommandText>
@@ -251,7 +251,7 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="spALCharacterSelectCharacterTableAdapter" GeneratorDataComponentClassName="spALCharacterSelectCharacterTableAdapter" Name="spALCharacterSelectCharacter" UserDataComponentName="spALCharacterSelectCharacterTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="Azur_Lane_OrganizerConnectionString2 (Settings)" DbObjectName="dbo.spALCharacterSelectCharacter" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="Azur_Lane_OrganizerConnectionString4 (Settings)" DbObjectName="dbo.spALCharacterSelectCharacter" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.spALCharacterSelectCharacter</CommandText>
@@ -293,7 +293,7 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="spALCharacterSelectNamesTableAdapter" GeneratorDataComponentClassName="spALCharacterSelectNamesTableAdapter" Name="spALCharacterSelectNames" UserDataComponentName="spALCharacterSelectNamesTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="Azur_Lane_OrganizerConnectionString2 (Settings)" DbObjectName="dbo.spALCharacterSelectNames" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="Azur_Lane_OrganizerConnectionString4 (Settings)" DbObjectName="dbo.spALCharacterSelectNames" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.spALCharacterSelectNames</CommandText>
@@ -312,7 +312,7 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="spALCharacterSelectNewestToOldestTableAdapter" GeneratorDataComponentClassName="spALCharacterSelectNewestToOldestTableAdapter" Name="spALCharacterSelectNewestToOldest" UserDataComponentName="spALCharacterSelectNewestToOldestTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="Azur_Lane_OrganizerConnectionString2 (Settings)" DbObjectName="dbo.spALCharacterSelectNewestToOldest" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="Azur_Lane_OrganizerConnectionString4 (Settings)" DbObjectName="dbo.spALCharacterSelectNewestToOldest" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.spALCharacterSelectNewestToOldest</CommandText>
@@ -353,7 +353,7 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
           </TableAdapter>
         </Tables>
         <Sources>
-          <DbSource ConnectionRef="Azur_Lane_OrganizerConnectionString2 (Settings)" DbObjectName="dbo.spALCharacterDelete" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="spALCharacterDelete" MethodsParameterType="CLR" Modifier="Public" Name="spALCharacterDelete" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="spALCharacterDelete">
+          <DbSource ConnectionRef="Azur_Lane_OrganizerConnectionString4 (Settings)" DbObjectName="dbo.spALCharacterDelete" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="spALCharacterDelete" MethodsParameterType="CLR" Modifier="Public" Name="spALCharacterDelete" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="spALCharacterDelete">
             <SelectCommand>
               <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                 <CommandText>dbo.spALCharacterDelete</CommandText>
@@ -364,7 +364,7 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
               </DbCommand>
             </SelectCommand>
           </DbSource>
-          <DbSource ConnectionRef="Azur_Lane_OrganizerConnectionString2 (Settings)" DbObjectName="dbo.spALCharacterInsert" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="spALCharacterInsert" MethodsParameterType="CLR" Modifier="Public" Name="spALCharacterInsert" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="spALCharacterInsert">
+          <DbSource ConnectionRef="Azur_Lane_OrganizerConnectionString4 (Settings)" DbObjectName="dbo.spALCharacterInsert" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="spALCharacterInsert" MethodsParameterType="CLR" Modifier="Public" Name="spALCharacterInsert" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="spALCharacterInsert">
             <SelectCommand>
               <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                 <CommandText>dbo.spALCharacterInsert</CommandText>
@@ -375,7 +375,7 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
               </DbCommand>
             </SelectCommand>
           </DbSource>
-          <DbSource ConnectionRef="Azur_Lane_OrganizerConnectionString2 (Settings)" DbObjectName="dbo.spALCharacterUpdate" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="spALCharacterUpdate" MethodsParameterType="CLR" Modifier="Public" Name="spALCharacterUpdate" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="spALCharacterUpdate">
+          <DbSource ConnectionRef="Azur_Lane_OrganizerConnectionString4 (Settings)" DbObjectName="dbo.spALCharacterUpdate" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="spALCharacterUpdate" MethodsParameterType="CLR" Modifier="Public" Name="spALCharacterUpdate" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="spALCharacterUpdate">
             <SelectCommand>
               <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                 <CommandText>dbo.spALCharacterUpdate</CommandText>
@@ -384,7 +384,7 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
                   <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@CharacterId" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
                   <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@Name" Precision="0" ProviderType="VarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
                   <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@Rarity" Precision="0" ProviderType="VarChar" Scale="0" Size="5" SourceColumnNullMapping="false" SourceVersion="Current" />
-                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Index" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@Index" Precision="0" ProviderType="VarChar" Scale="0" Size="5" SourceColumnNullMapping="false" SourceVersion="Current" />
                   <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@Faction" Precision="0" ProviderType="VarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
                   <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@IdNo" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
                   <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Level" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
@@ -403,6 +403,19 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
                   <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@Equipment2" Precision="0" ProviderType="VarChar" Scale="0" Size="150" SourceColumnNullMapping="false" SourceVersion="Current" />
                   <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@Equipment3" Precision="0" ProviderType="VarChar" Scale="0" Size="150" SourceColumnNullMapping="false" SourceVersion="Current" />
                   <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@Equipment4" Precision="0" ProviderType="VarChar" Scale="0" Size="150" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@MainPictureDirectory" Precision="0" ProviderType="VarChar" Scale="0" Size="100" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@ChibiPictureDirectory" Precision="0" ProviderType="VarChar" Scale="0" Size="100" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="Azur_Lane_OrganizerConnectionString4 (Settings)" DbObjectName="dbo.spALCharacterUpdateImageDirectories" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="spALCharacterUpdateImageDirectories" MethodsParameterType="CLR" Modifier="Public" Name="spALCharacterUpdateImageDirectories" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="spALCharacterUpdateImageDirectories">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.spALCharacterUpdateImageDirectories</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@CharacterId" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
                   <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@MainPictureDirectory" Precision="0" ProviderType="VarChar" Scale="0" Size="100" SourceColumnNullMapping="false" SourceVersion="Current" />
                   <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@ChibiPictureDirectory" Precision="0" ProviderType="VarChar" Scale="0" Size="100" SourceColumnNullMapping="false" SourceVersion="Current" />
                 </Parameters>
@@ -434,7 +447,13 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Index" msprop:Generator_ColumnVarNameInTable="columnIndex" msprop:Generator_ColumnPropNameInRow="Index" msprop:Generator_ColumnPropNameInTable="IndexColumn" msprop:Generator_UserColumnName="Index" type="xs:int" minOccurs="0" />
+              <xs:element name="Index" msprop:Generator_ColumnVarNameInTable="columnIndex" msprop:Generator_ColumnPropNameInRow="Index" msprop:Generator_ColumnPropNameInTable="IndexColumn" msprop:Generator_UserColumnName="Index" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
               <xs:element name="Faction" msprop:Generator_ColumnVarNameInTable="columnFaction" msprop:Generator_ColumnPropNameInRow="Faction" msprop:Generator_ColumnPropNameInTable="FactionColumn" msprop:Generator_UserColumnName="Faction" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
@@ -554,7 +573,13 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Index" msprop:Generator_ColumnVarNameInTable="columnIndex" msprop:Generator_ColumnPropNameInRow="Index" msprop:Generator_ColumnPropNameInTable="IndexColumn" msprop:Generator_UserColumnName="Index" type="xs:int" minOccurs="0" />
+              <xs:element name="Index" msprop:Generator_ColumnVarNameInTable="columnIndex" msprop:Generator_ColumnPropNameInRow="Index" msprop:Generator_ColumnPropNameInTable="IndexColumn" msprop:Generator_UserColumnName="Index" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
               <xs:element name="Faction" msprop:Generator_ColumnVarNameInTable="columnFaction" msprop:Generator_ColumnPropNameInRow="Faction" msprop:Generator_ColumnPropNameInTable="FactionColumn" msprop:Generator_UserColumnName="Faction" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
@@ -674,7 +699,13 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Index" msprop:Generator_ColumnVarNameInTable="columnIndex" msprop:Generator_ColumnPropNameInRow="Index" msprop:Generator_ColumnPropNameInTable="IndexColumn" msprop:Generator_UserColumnName="Index" type="xs:int" minOccurs="0" />
+              <xs:element name="Index" msprop:Generator_ColumnVarNameInTable="columnIndex" msprop:Generator_ColumnPropNameInRow="Index" msprop:Generator_ColumnPropNameInTable="IndexColumn" msprop:Generator_UserColumnName="Index" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
               <xs:element name="Faction" msprop:Generator_ColumnVarNameInTable="columnFaction" msprop:Generator_ColumnPropNameInRow="Faction" msprop:Generator_ColumnPropNameInTable="FactionColumn" msprop:Generator_UserColumnName="Faction" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
@@ -808,7 +839,13 @@ SELECT CharacterId, Name, Rarity, [Index], Faction, IdNo, Level, Power, Stars, A
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Index" msprop:Generator_ColumnVarNameInTable="columnIndex" msprop:Generator_ColumnPropNameInRow="Index" msprop:Generator_ColumnPropNameInTable="IndexColumn" msprop:Generator_UserColumnName="Index" type="xs:int" minOccurs="0" />
+              <xs:element name="Index" msprop:Generator_ColumnVarNameInTable="columnIndex" msprop:Generator_ColumnPropNameInRow="Index" msprop:Generator_ColumnPropNameInTable="IndexColumn" msprop:Generator_UserColumnName="Index" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
               <xs:element name="Faction" msprop:Generator_ColumnVarNameInTable="columnFaction" msprop:Generator_ColumnPropNameInRow="Faction" msprop:Generator_ColumnPropNameInTable="FactionColumn" msprop:Generator_UserColumnName="Faction" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">

@@ -10,7 +10,7 @@ namespace AzurLane_Organizer.Entities
     {
         private int _characterId;
 
-        public eCharacter(int characterId, string name, string rarity, int index, string faction,
+        public eCharacter(int characterId, string name, string rarity, string index, string faction,
             int idNo, int level, int power, int stars, int affinity, int ranking, string skill1,
             string skill2, string skill3, string skill4, int tier, string buffs, string sinergy,
             string equipment1, string equipment2, string equipment3, string equipment4,
@@ -51,7 +51,7 @@ namespace AzurLane_Organizer.Entities
         public int CharacterId { get { return _characterId; } }
         public string Name { get; set; }
         public string Rarity { get; set; }
-        public int Index { get; set; }
+        public string Index { get; set; }
         public string Faction { get; set; }
         public int IdNo { get; set; }
         public int Level { get; set; }

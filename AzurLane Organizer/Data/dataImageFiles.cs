@@ -97,7 +97,6 @@ namespace AzurLane_Organizer.Data
                     character.MainPictureDirectory = pictureFileShortPath;
                 else
                     character.ChibiPictureDirectory = pictureFileShortPath;
-                //Should save changes in files to the database
                 return pictureFileShortPath;
             }
             catch

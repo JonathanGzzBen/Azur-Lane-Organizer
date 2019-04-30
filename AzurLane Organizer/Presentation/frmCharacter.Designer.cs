@@ -47,7 +47,6 @@
             this.numAffinity = new System.Windows.Forms.NumericUpDown();
             this.numStars = new System.Windows.Forms.NumericUpDown();
             this.numPower = new System.Windows.Forms.NumericUpDown();
-            this.numIndex = new System.Windows.Forms.NumericUpDown();
             this.numLevel = new System.Windows.Forms.NumericUpDown();
             this.txtName = new System.Windows.Forms.TextBox();
             this.grpSkills = new System.Windows.Forms.GroupBox();
@@ -82,6 +81,7 @@
             this.emptyStrategyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuEditEmptyEquipment = new System.Windows.Forms.ToolStripMenuItem();
             this.picChibi = new System.Windows.Forms.PictureBox();
+            this.txtIndex = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.picCharacter)).BeginInit();
             this.grpBasicInformation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numRanking)).BeginInit();
@@ -89,7 +89,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numAffinity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numStars)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPower)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numIndex)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numLevel)).BeginInit();
             this.grpSkills.SuspendLayout();
             this.grpStrategy.SuspendLayout();
@@ -123,7 +122,7 @@
             // 
             this.lblRarity.AutoSize = true;
             this.lblRarity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRarity.Location = new System.Drawing.Point(14, 81);
+            this.lblRarity.Location = new System.Drawing.Point(9, 81);
             this.lblRarity.Name = "lblRarity";
             this.lblRarity.Size = new System.Drawing.Size(54, 20);
             this.lblRarity.TabIndex = 2;
@@ -133,7 +132,7 @@
             // 
             this.lblIndex.AutoSize = true;
             this.lblIndex.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIndex.Location = new System.Drawing.Point(169, 81);
+            this.lblIndex.Location = new System.Drawing.Point(164, 81);
             this.lblIndex.Name = "lblIndex";
             this.lblIndex.Size = new System.Drawing.Size(52, 20);
             this.lblIndex.TabIndex = 4;
@@ -143,7 +142,7 @@
             // 
             this.lblFaction.AutoSize = true;
             this.lblFaction.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFaction.Location = new System.Drawing.Point(323, 78);
+            this.lblFaction.Location = new System.Drawing.Point(318, 81);
             this.lblFaction.Name = "lblFaction";
             this.lblFaction.Size = new System.Drawing.Size(66, 20);
             this.lblFaction.TabIndex = 6;
@@ -153,7 +152,7 @@
             // 
             this.lblId.AutoSize = true;
             this.lblId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblId.Location = new System.Drawing.Point(597, 84);
+            this.lblId.Location = new System.Drawing.Point(606, 81);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(51, 20);
             this.lblId.TabIndex = 8;
@@ -162,17 +161,17 @@
             // txtRarity
             // 
             this.txtRarity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRarity.Location = new System.Drawing.Point(74, 78);
+            this.txtRarity.Location = new System.Drawing.Point(69, 78);
             this.txtRarity.MaxLength = 5;
             this.txtRarity.Name = "txtRarity";
             this.txtRarity.ReadOnly = true;
-            this.txtRarity.Size = new System.Drawing.Size(46, 26);
+            this.txtRarity.Size = new System.Drawing.Size(80, 26);
             this.txtRarity.TabIndex = 3;
             // 
             // txtFaction
             // 
             this.txtFaction.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFaction.Location = new System.Drawing.Point(395, 75);
+            this.txtFaction.Location = new System.Drawing.Point(390, 78);
             this.txtFaction.MaxLength = 50;
             this.txtFaction.Name = "txtFaction";
             this.txtFaction.ReadOnly = true;
@@ -183,7 +182,7 @@
             // 
             this.lblLevel.AutoSize = true;
             this.lblLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLevel.Location = new System.Drawing.Point(18, 131);
+            this.lblLevel.Location = new System.Drawing.Point(13, 131);
             this.lblLevel.Name = "lblLevel";
             this.lblLevel.Size = new System.Drawing.Size(50, 20);
             this.lblLevel.TabIndex = 10;
@@ -193,7 +192,7 @@
             // 
             this.lblPower.AutoSize = true;
             this.lblPower.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPower.Location = new System.Drawing.Point(164, 131);
+            this.lblPower.Location = new System.Drawing.Point(159, 131);
             this.lblPower.Name = "lblPower";
             this.lblPower.Size = new System.Drawing.Size(57, 20);
             this.lblPower.TabIndex = 12;
@@ -203,7 +202,7 @@
             // 
             this.lblStars.AutoSize = true;
             this.lblStars.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStars.Location = new System.Drawing.Point(323, 131);
+            this.lblStars.Location = new System.Drawing.Point(312, 131);
             this.lblStars.Name = "lblStars";
             this.lblStars.Size = new System.Drawing.Size(51, 20);
             this.lblStars.TabIndex = 14;
@@ -213,7 +212,7 @@
             // 
             this.lblAffinity.AutoSize = true;
             this.lblAffinity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAffinity.Location = new System.Drawing.Point(444, 131);
+            this.lblAffinity.Location = new System.Drawing.Point(459, 131);
             this.lblAffinity.Name = "lblAffinity";
             this.lblAffinity.Size = new System.Drawing.Size(61, 20);
             this.lblAffinity.TabIndex = 16;
@@ -223,7 +222,7 @@
             // 
             this.lblCharacterRanking.AutoSize = true;
             this.lblCharacterRanking.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCharacterRanking.Location = new System.Drawing.Point(612, 131);
+            this.lblCharacterRanking.Location = new System.Drawing.Point(616, 131);
             this.lblCharacterRanking.Name = "lblCharacterRanking";
             this.lblCharacterRanking.Size = new System.Drawing.Size(36, 20);
             this.lblCharacterRanking.TabIndex = 18;
@@ -232,12 +231,12 @@
             // grpBasicInformation
             // 
             this.grpBasicInformation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpBasicInformation.Controls.Add(this.txtIndex);
             this.grpBasicInformation.Controls.Add(this.numRanking);
             this.grpBasicInformation.Controls.Add(this.numIdNo);
             this.grpBasicInformation.Controls.Add(this.numAffinity);
             this.grpBasicInformation.Controls.Add(this.numStars);
             this.grpBasicInformation.Controls.Add(this.numPower);
-            this.grpBasicInformation.Controls.Add(this.numIndex);
             this.grpBasicInformation.Controls.Add(this.numLevel);
             this.grpBasicInformation.Controls.Add(this.txtName);
             this.grpBasicInformation.Controls.Add(this.lblName);
@@ -262,93 +261,80 @@
             // 
             // numRanking
             // 
-            this.numRanking.Location = new System.Drawing.Point(654, 128);
+            this.numRanking.Location = new System.Drawing.Point(660, 128);
             this.numRanking.Maximum = new decimal(new int[] {
-            1000,
+            100000,
             0,
             0,
             0});
             this.numRanking.Name = "numRanking";
             this.numRanking.ReadOnly = true;
-            this.numRanking.Size = new System.Drawing.Size(58, 26);
+            this.numRanking.Size = new System.Drawing.Size(80, 26);
             this.numRanking.TabIndex = 19;
             // 
             // numIdNo
             // 
-            this.numIdNo.Location = new System.Drawing.Point(654, 81);
+            this.numIdNo.Location = new System.Drawing.Point(663, 78);
             this.numIdNo.Maximum = new decimal(new int[] {
-            1000,
+            100000,
             0,
             0,
             0});
             this.numIdNo.Name = "numIdNo";
             this.numIdNo.ReadOnly = true;
-            this.numIdNo.Size = new System.Drawing.Size(58, 26);
+            this.numIdNo.Size = new System.Drawing.Size(80, 26);
             this.numIdNo.TabIndex = 9;
             // 
             // numAffinity
             // 
-            this.numAffinity.Location = new System.Drawing.Point(507, 128);
+            this.numAffinity.Location = new System.Drawing.Point(528, 128);
             this.numAffinity.Maximum = new decimal(new int[] {
-            1000,
+            100000,
             0,
             0,
             0});
             this.numAffinity.Name = "numAffinity";
             this.numAffinity.ReadOnly = true;
-            this.numAffinity.Size = new System.Drawing.Size(58, 26);
+            this.numAffinity.Size = new System.Drawing.Size(80, 26);
             this.numAffinity.TabIndex = 17;
             // 
             // numStars
             // 
-            this.numStars.Location = new System.Drawing.Point(375, 128);
+            this.numStars.Location = new System.Drawing.Point(371, 128);
             this.numStars.Maximum = new decimal(new int[] {
-            1000,
+            100000,
             0,
             0,
             0});
             this.numStars.Name = "numStars";
             this.numStars.ReadOnly = true;
-            this.numStars.Size = new System.Drawing.Size(58, 26);
+            this.numStars.Size = new System.Drawing.Size(80, 26);
             this.numStars.TabIndex = 15;
             // 
             // numPower
             // 
-            this.numPower.Location = new System.Drawing.Point(227, 128);
+            this.numPower.Location = new System.Drawing.Point(224, 128);
             this.numPower.Maximum = new decimal(new int[] {
-            1000,
+            100000,
             0,
             0,
             0});
             this.numPower.Name = "numPower";
             this.numPower.ReadOnly = true;
-            this.numPower.Size = new System.Drawing.Size(58, 26);
+            this.numPower.Size = new System.Drawing.Size(80, 26);
             this.numPower.TabIndex = 13;
-            // 
-            // numIndex
-            // 
-            this.numIndex.Location = new System.Drawing.Point(227, 78);
-            this.numIndex.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numIndex.Name = "numIndex";
-            this.numIndex.ReadOnly = true;
-            this.numIndex.Size = new System.Drawing.Size(58, 26);
-            this.numIndex.TabIndex = 5;
             // 
             // numLevel
             // 
-            this.numLevel.Location = new System.Drawing.Point(72, 128);
+            this.numLevel.Location = new System.Drawing.Point(71, 128);
             this.numLevel.Maximum = new decimal(new int[] {
-            1000,
+            100000,
             0,
             0,
             0});
             this.numLevel.Name = "numLevel";
             this.numLevel.ReadOnly = true;
-            this.numLevel.Size = new System.Drawing.Size(58, 26);
+            this.numLevel.Size = new System.Drawing.Size(80, 26);
             this.numLevel.TabIndex = 11;
             // 
             // txtName
@@ -440,15 +426,15 @@
             // 
             // numTier
             // 
-            this.numTier.Location = new System.Drawing.Point(67, 25);
+            this.numTier.Location = new System.Drawing.Point(54, 25);
             this.numTier.Maximum = new decimal(new int[] {
-            1000,
+            100000,
             0,
             0,
             0});
             this.numTier.Name = "numTier";
             this.numTier.ReadOnly = true;
-            this.numTier.Size = new System.Drawing.Size(58, 26);
+            this.numTier.Size = new System.Drawing.Size(85, 26);
             this.numTier.TabIndex = 1;
             // 
             // txtSinergy
@@ -503,7 +489,7 @@
             // 
             this.lblTier.AutoSize = true;
             this.lblTier.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTier.Location = new System.Drawing.Point(22, 28);
+            this.lblTier.Location = new System.Drawing.Point(9, 28);
             this.lblTier.Name = "lblTier";
             this.lblTier.Size = new System.Drawing.Size(39, 20);
             this.lblTier.TabIndex = 0;
@@ -518,55 +504,55 @@
             this.grpEquipment.Controls.Add(this.txtEquipment2);
             this.grpEquipment.Controls.Add(this.txtEquipment1);
             this.grpEquipment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpEquipment.Location = new System.Drawing.Point(311, 514);
+            this.grpEquipment.Location = new System.Drawing.Point(242, 514);
             this.grpEquipment.Name = "grpEquipment";
-            this.grpEquipment.Size = new System.Drawing.Size(862, 121);
+            this.grpEquipment.Size = new System.Drawing.Size(931, 121);
             this.grpEquipment.TabIndex = 3;
             this.grpEquipment.TabStop = false;
             this.grpEquipment.Text = "Equipment";
             // 
             // txtEquipment5
             // 
-            this.txtEquipment5.Location = new System.Drawing.Point(684, 25);
+            this.txtEquipment5.Location = new System.Drawing.Point(744, 25);
             this.txtEquipment5.MaxLength = 150;
             this.txtEquipment5.Multiline = true;
             this.txtEquipment5.Name = "txtEquipment5";
             this.txtEquipment5.ReadOnly = true;
             this.txtEquipment5.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtEquipment5.Size = new System.Drawing.Size(163, 80);
+            this.txtEquipment5.Size = new System.Drawing.Size(175, 80);
             this.txtEquipment5.TabIndex = 4;
             // 
             // txtEquipment4
             // 
-            this.txtEquipment4.Location = new System.Drawing.Point(515, 25);
+            this.txtEquipment4.Location = new System.Drawing.Point(560, 25);
             this.txtEquipment4.MaxLength = 150;
             this.txtEquipment4.Multiline = true;
             this.txtEquipment4.Name = "txtEquipment4";
             this.txtEquipment4.ReadOnly = true;
             this.txtEquipment4.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtEquipment4.Size = new System.Drawing.Size(163, 80);
+            this.txtEquipment4.Size = new System.Drawing.Size(175, 80);
             this.txtEquipment4.TabIndex = 3;
             // 
             // txtEquipment3
             // 
-            this.txtEquipment3.Location = new System.Drawing.Point(346, 25);
+            this.txtEquipment3.Location = new System.Drawing.Point(376, 25);
             this.txtEquipment3.MaxLength = 150;
             this.txtEquipment3.Multiline = true;
             this.txtEquipment3.Name = "txtEquipment3";
             this.txtEquipment3.ReadOnly = true;
             this.txtEquipment3.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtEquipment3.Size = new System.Drawing.Size(163, 80);
+            this.txtEquipment3.Size = new System.Drawing.Size(175, 80);
             this.txtEquipment3.TabIndex = 2;
             // 
             // txtEquipment2
             // 
-            this.txtEquipment2.Location = new System.Drawing.Point(177, 25);
+            this.txtEquipment2.Location = new System.Drawing.Point(192, 25);
             this.txtEquipment2.MaxLength = 150;
             this.txtEquipment2.Multiline = true;
             this.txtEquipment2.Name = "txtEquipment2";
             this.txtEquipment2.ReadOnly = true;
             this.txtEquipment2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtEquipment2.Size = new System.Drawing.Size(163, 80);
+            this.txtEquipment2.Size = new System.Drawing.Size(175, 80);
             this.txtEquipment2.TabIndex = 1;
             // 
             // txtEquipment1
@@ -577,7 +563,7 @@
             this.txtEquipment1.Name = "txtEquipment1";
             this.txtEquipment1.ReadOnly = true;
             this.txtEquipment1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtEquipment1.Size = new System.Drawing.Size(163, 80);
+            this.txtEquipment1.Size = new System.Drawing.Size(175, 80);
             this.txtEquipment1.TabIndex = 0;
             // 
             // menuStrip1
@@ -700,6 +686,16 @@
             this.picChibi.TabIndex = 1;
             this.picChibi.TabStop = false;
             // 
+            // txtIndex
+            // 
+            this.txtIndex.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIndex.Location = new System.Drawing.Point(222, 78);
+            this.txtIndex.MaxLength = 5;
+            this.txtIndex.Name = "txtIndex";
+            this.txtIndex.ReadOnly = true;
+            this.txtIndex.Size = new System.Drawing.Size(80, 26);
+            this.txtIndex.TabIndex = 20;
+            // 
             // frmCharacter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -728,7 +724,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numAffinity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numStars)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPower)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numIndex)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numLevel)).EndInit();
             this.grpSkills.ResumeLayout(false);
             this.grpSkills.PerformLayout();
@@ -797,9 +792,9 @@
         private System.Windows.Forms.NumericUpDown numAffinity;
         private System.Windows.Forms.NumericUpDown numStars;
         private System.Windows.Forms.NumericUpDown numPower;
-        private System.Windows.Forms.NumericUpDown numIndex;
         private System.Windows.Forms.NumericUpDown numLevel;
         private System.Windows.Forms.NumericUpDown numTier;
         private System.Windows.Forms.ToolStripMenuItem emptyBasicInformationToolStripMenuItem;
+        private System.Windows.Forms.TextBox txtIndex;
     }
 }
