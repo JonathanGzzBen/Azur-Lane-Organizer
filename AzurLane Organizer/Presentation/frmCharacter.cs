@@ -263,7 +263,7 @@ namespace AzurLane_Organizer.Presentation
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return null;
             }
-            if(_selectedCharacter.MainPictureDirectory == "" && _selectedCharacter.ChibiPictureDirectory == "")
+            if(_selectedCharacter.MainPictureDirectory == null && _selectedCharacter.ChibiPictureDirectory == null)
             {
                 MessageBox.Show("To keep exact proportions, select an image with same height and width.", "Recommended image size",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -309,7 +309,6 @@ namespace AzurLane_Organizer.Presentation
             {
                 /*If trying to make a new character*/
                 _bCharacter.CharacterCreate(this.txtName.Text);
-                this._frmParent.UpdateGrid();
                 /*Now this Form references the new character*/
                 this._selectedCharacter = _bCharacter.GetCharacterNewest();
             }

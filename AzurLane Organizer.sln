@@ -5,8 +5,6 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzurLane Organizer", "AzurLane Organizer\AzurLane Organizer.csproj", "{A8FAD021-D81F-439A-804B-AD50C6FF031C}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Azur Lane Organizer Setup", "Azur Lane Organizer Setup\Azur Lane Organizer Setup.vdproj", "{91C460CE-E450-400F-A524-A097C8064204}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,8 +15,6 @@ Global
 		{A8FAD021-D81F-439A-804B-AD50C6FF031C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8FAD021-D81F-439A-804B-AD50C6FF031C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8FAD021-D81F-439A-804B-AD50C6FF031C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{91C460CE-E450-400F-A524-A097C8064204}.Debug|Any CPU.ActiveCfg = Debug
-		{91C460CE-E450-400F-A524-A097C8064204}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

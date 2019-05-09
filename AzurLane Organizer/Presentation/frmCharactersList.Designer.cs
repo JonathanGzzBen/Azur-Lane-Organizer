@@ -28,12 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.dgdCharactersList = new System.Windows.Forms.DataGridView();
-            this.spALCharacterSelectNamesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.azurLaneOrganizerDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.azur_Lane_OrganizerDataSet = new AzurLane_Organizer.Databases.Azur_Lane_OrganizerDataSet();
-            this.spALCharacterSelectNamesTableAdapter = new AzurLane_Organizer.Databases.Azur_Lane_OrganizerDataSetTableAdapters.spALCharacterSelectNamesTableAdapter();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.mnuFile = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuFileNewCharacter = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,9 +39,6 @@
             this.btnDeleteCharacter = new System.Windows.Forms.Button();
             this.btnEditCharacter = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgdCharactersList)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spALCharacterSelectNamesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.azurLaneOrganizerDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.azur_Lane_OrganizerDataSet)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,25 +62,6 @@
             this.dgdCharactersList.ShowEditingIcon = false;
             this.dgdCharactersList.Size = new System.Drawing.Size(350, 510);
             this.dgdCharactersList.TabIndex = 1;
-            // 
-            // spALCharacterSelectNamesBindingSource
-            // 
-            this.spALCharacterSelectNamesBindingSource.DataMember = "spALCharacterSelectNames";
-            this.spALCharacterSelectNamesBindingSource.DataSource = this.azurLaneOrganizerDataSetBindingSource;
-            // 
-            // azurLaneOrganizerDataSetBindingSource
-            // 
-            this.azurLaneOrganizerDataSetBindingSource.DataSource = this.azur_Lane_OrganizerDataSet;
-            this.azurLaneOrganizerDataSetBindingSource.Position = 0;
-            // 
-            // azur_Lane_OrganizerDataSet
-            // 
-            this.azur_Lane_OrganizerDataSet.DataSetName = "Azur_Lane_OrganizerDataSet";
-            this.azur_Lane_OrganizerDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // spALCharacterSelectNamesTableAdapter
-            // 
-            this.spALCharacterSelectNamesTableAdapter.ClearBeforeFill = true;
             // 
             // menuStrip1
             // 
@@ -193,9 +166,6 @@
             this.Text = "Characters List - Azur Lane Organizer";
             this.Load += new System.EventHandler(this.frmCharactersList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgdCharactersList)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spALCharacterSelectNamesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.azurLaneOrganizerDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.azur_Lane_OrganizerDataSet)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -206,10 +176,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgdCharactersList;
-        private System.Windows.Forms.BindingSource azurLaneOrganizerDataSetBindingSource;
-        private Databases.Azur_Lane_OrganizerDataSet azur_Lane_OrganizerDataSet;
-        private System.Windows.Forms.BindingSource spALCharacterSelectNamesBindingSource;
-        private Databases.Azur_Lane_OrganizerDataSetTableAdapters.spALCharacterSelectNamesTableAdapter spALCharacterSelectNamesTableAdapter;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem mnuFile;
         private System.Windows.Forms.ToolStripMenuItem mnuFileNewCharacter;

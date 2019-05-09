@@ -70,15 +70,13 @@
     <ManifestKeyFile>AzurLane Organizer_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <GenerateManifests>true</GenerateManifests>
+    <GenerateManifests>false</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup>
     <TargetZone>LocalIntranet</TargetZone>
   </PropertyGroup>
-  <PropertyGroup>
-    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
-  </PropertyGroup>
+  <PropertyGroup />
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -94,11 +92,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Databases\Azur_Lane_OrganizerDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Azur_Lane_OrganizerDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Business\bCharacter.cs" />
     <Compile Include="Business\bImageFiles.cs" />
     <Compile Include="Data\dataCharacter.cs">
@@ -107,18 +100,19 @@
     <Compile Include="Data\dataImageFiles.cs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
+    <Compile Include="Data\GenericUtils.cs" />
     <Compile Include="Entities\eCharacter.cs" />
-    <Compile Include="Presentation\frmCharactersList.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentation\frmCharactersList.Designer.cs">
-      <DependentUpon>frmCharactersList.cs</DependentUpon>
-    </Compile>
     <Compile Include="Presentation\frmCharacter.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentation\frmCharacter.Designer.cs">
       <DependentUpon>frmCharacter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\frmCharactersList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmCharactersList.Designer.cs">
+      <DependentUpon>frmCharactersList.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation\Resource1.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -127,11 +121,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Presentation\frmCharactersList.resx">
-      <DependentUpon>frmCharactersList.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Presentation\frmCharacter.resx">
       <DependentUpon>frmCharacter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmCharactersList.resx">
+      <DependentUpon>frmCharactersList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\Resource1.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -147,18 +141,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="AzurLane Organizer_TemporaryKey.pfx" />
-    <None Include="Databases\Azur_Lane_OrganizerDataSet.xsc">
-      <DependentUpon>Azur_Lane_OrganizerDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Databases\Azur_Lane_OrganizerDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Azur_Lane_OrganizerDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Databases\Azur_Lane_OrganizerDataSet.xss">
-      <DependentUpon>Azur_Lane_OrganizerDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -192,15 +174,7 @@
   <ItemGroup>
     <None Include="Resources\AjaxIcon.ico" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="Databases\Azur Lane Organizer.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Databases\Azur Lane Organizer_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Azur Lane Organizer.mdf</DependentUpon>
-    </Content>
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

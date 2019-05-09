@@ -9,7 +9,7 @@ using AzurLane_Organizer.Data;
 
 namespace AzurLane_Organizer.Business
 {
-    class bCharacter
+    public class bCharacter
     {
         private dataCharacter _data = new dataCharacter();
 
@@ -25,7 +25,7 @@ namespace AzurLane_Organizer.Business
         /// <returns></returns>
         public List<eCharacter> GetCharacters()
         {
-            return _data.CharacterSelectAll();
+            return _data.CharacterSelect();
         }
 
         /// <summary>
@@ -40,7 +40,7 @@ namespace AzurLane_Organizer.Business
             //Gets a list of eCharacter, so it will return
             //the first one, which is the one with
             //the matching CharacterId
-            return _data.CharacterSelectAll(characterId)[0];
+            return _data.CharacterSelect(characterId)[0];
         }
 
         /// <summary>

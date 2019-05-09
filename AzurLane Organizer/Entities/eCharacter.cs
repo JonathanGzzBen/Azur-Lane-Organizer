@@ -6,9 +6,15 @@ using System.Threading.Tasks;
 
 namespace AzurLane_Organizer.Entities
 {
-    class eCharacter
+    [Serializable]
+    public class eCharacter
     {
         private int _characterId;
+
+        public eCharacter()
+        {
+
+        }
 
         public eCharacter(int characterId, string name, string rarity, string index, string faction,
             int idNo, int level, int power, int stars, int affinity, int ranking, string skill1,

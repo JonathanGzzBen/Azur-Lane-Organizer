@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">All</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>72b8427c-fbf7-4ed1-ab4c-ebbf31fda0f6</ProjectGuid>
+    <OutputType>msi</OutputType>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Azur Lane Organizer Setup_advinst.aip</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <IsWindowsApplication>True</IsWindowsApplication>
+    <AssemblyName>Azur Lane Organizer Setup_advinst</AssemblyName>
+    <Name>Azur Lane Organizer Setup_advinst</Name>
+    <RootNamespace>Azur Lane Organizer Setup_advinst</RootNamespace>
+    <ImportedProject>{91c460ce-e450-400f-a524-a097c8064204}</ImportedProject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' ">
+    <DebugSymbols>false</DebugSymbols>
+    <EnableUnmanagedDebugging>true</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Azur Lane Organizer Setup_advinst.aip">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AzurLane Organizer\AzurLane Organizer.csproj">
+      <Name>AzurLane Organizer</Name>
+      <Project>{a8fad021-d81f-439a-804b-ad50c6ff031c}</Project>
+      <Private>True</Private>
+      <OutputsToImport>References</OutputsToImport>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Caphyon\Advanced Installer\AdvInstExtTasks.Targets" />
+</Project>

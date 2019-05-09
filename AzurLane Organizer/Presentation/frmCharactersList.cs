@@ -18,6 +18,8 @@ namespace AzurLane_Organizer.Presentation
 
         public void UpdateGrid()
         {
+            //Refreshes grid
+            this.dgdCharactersList.DataSource = null;
             this.dgdCharactersList.DataSource = _bCharacter.GetCharacterNames();
             if(this.dgdCharactersList.DataSource == null)
             {
@@ -32,6 +34,7 @@ namespace AzurLane_Organizer.Presentation
                 else
                     column.Visible = false;
             }
+            dgdCharactersList.Select();
         }
 
         private void NewCharacter()
@@ -53,28 +56,34 @@ namespace AzurLane_Organizer.Presentation
 
         private void DeleteCharacter()
         {
-            if(dgdCharactersList.SelectedRows.Count == 1)
+            int selectedCharacterId = -1;
+            try
             {
-                DialogResult result = MessageBox.Show("Are you sure you want to delete this character?", "Delete character",
-                    MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dgdCharactersList.SelectedRows.Count == 1 && dgdCharactersList.CurrentRow.Index >= 0)
+                    selectedCharacterId = Convert.ToInt32(dgdCharactersList.CurrentRow.Cells[0].Value);
+            }
+            catch
+            {
+                dgdCharactersList.Select();
+                return;
+            }
+            DialogResult result = MessageBox.Show("Are you sure you want to delete this character?", "Delete character",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-                if (result != DialogResult.Yes)
-                {
-                    return;
-                }
-
-                int selectedCharacterId = Convert.ToInt32(dgdCharactersList.CurrentRow.Cells[0].Value);
-                if (_bCharacter.CharacterDelete(selectedCharacterId) == 0)
-                {
-                    MessageBox.Show("Character could not be deleted.", "Error",
-                        MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else
-                {
-                    UpdateGrid();
-                    MessageBox.Show("Character has been deleted", "Character Deleted",
-                        MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
+            if (result != DialogResult.Yes)
+            {
+                return;
+            }
+            if (_bCharacter.CharacterDelete(selectedCharacterId) == 0)
+            {
+                MessageBox.Show("Character could not be deleted.", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                UpdateGrid();
+                MessageBox.Show("Character has been deleted", "Character Deleted",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
