@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzurLane Organizer", "AzurLane Organizer\AzurLane Organizer.csproj", "{A8FAD021-D81F-439A-804B-AD50C6FF031C}"
 EndProject
+Project("{840C416C-B8F3-42BC-B0DD-F6BB14C9F8CB}") = "Azur Lane Organizer Setup", "Azur Lane Organizer Setup\Azur Lane Organizer Setup.aiproj", "{3D55ECF9-7164-4A72-A947-AE73FC61EC85}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A8FAD021-D81F-439A-804B-AD50C6FF031C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8FAD021-D81F-439A-804B-AD50C6FF031C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8FAD021-D81F-439A-804B-AD50C6FF031C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D55ECF9-7164-4A72-A947-AE73FC61EC85}.Debug|Any CPU.ActiveCfg = All
+		{3D55ECF9-7164-4A72-A947-AE73FC61EC85}.Debug|Any CPU.Build.0 = All
+		{3D55ECF9-7164-4A72-A947-AE73FC61EC85}.Release|Any CPU.ActiveCfg = All
+		{3D55ECF9-7164-4A72-A947-AE73FC61EC85}.Release|Any CPU.Build.0 = All
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
